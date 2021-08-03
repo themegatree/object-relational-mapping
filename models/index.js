@@ -10,7 +10,8 @@ const sequelize = new Sequelize(
 );
 
 const models = {
-  Cat: require('./cat')(sequelize, DataTypes),
+  // Cat: require('./cat')(sequelize, DataTypes),
+  Owners: require('./owners')(sequelize, DataTypes)
 };
 
 module.exports = {
