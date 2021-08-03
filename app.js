@@ -13,6 +13,24 @@ sequelize.sync().then(async () => {
   //     owner: 'Ed'
   //   }
   // )
+
+  //   // Create a new record
+  //   await models.Cat.create(
+  //     {
+  //       name: 'lulu',
+  //       breed: 'cat',
+  //       owner: 'shiv'
+  //     }
+  //   );
+
+  //   await models.Cat.create(
+  //     {
+  //       name: 'smudge',
+  //       breed: 'british shorthair',
+  //       owner: 'james'
+  //     }
+  //   )
+
   // // Find a record
   // const cats = await models.Cat.findAll({
   //   where: {
@@ -24,9 +42,32 @@ sequelize.sync().then(async () => {
   // const cat = cats[0]
   // // Log the object properties that represent fields
   // console.log(cat.name)
+
+
   // // ----
   // // TO DO
   // // ----
   // // Update a record
+
+  // await models.Cat.update(
+  //   {
+  //     name: 'garfield',
+  //     breed: 'orange persian',
+  //     owner: 'john'
+  //   },
+  //   {
+  //     where: {
+  //       id: 2
+  //     }
+  //   }
+  // )
+
   // // Delete a record
+
+  await models.Cat.destroy(
+    {where: {
+      id: 1
+      }
+    }
+  )
 });
