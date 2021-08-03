@@ -72,10 +72,10 @@ sequelize.sync().then(async () => {
 
   // // Delete a record
 
-  await models.Cat.destroy(
-    {where: {
-      id: 1
-      }
-    }
-  )
+  // await models.Cat.destroy(
+  //   {where: {
+  //     id: 1
+  //     }
+  //   }
+  // )
 });
