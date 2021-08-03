@@ -1,0 +1,17 @@
+{
+  "name": "object-relational-mapping",
+  "description": "### Quickstart ```sh $ npm install $ createdb cats # set up your development database ```",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "dearshrewdwit",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "pg": "^8.6.0",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^6.6.2"
+  }
+}

@@ -1,0 +1,6 @@
+CREATE TABLE cats(
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(60),
+  breed VARCHAR(60),
+  owner VARCHAR(60)
+)
